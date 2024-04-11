@@ -6,7 +6,7 @@ import './index.css'
 const root = document.getElementById('root')
 const app = createRoot(root)
 app.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 )

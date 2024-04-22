@@ -8,7 +8,7 @@ const Home = () => {
     "This is sample context, see how to get this text in 'Products.jsx'"
   )
   const [array, setArray] = useState([
-    'Hi',
+    'Home Screen',
     'Can',
     'You',
     'See',

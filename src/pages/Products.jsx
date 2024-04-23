@@ -53,18 +53,18 @@ const Products = () => {
             />
         </label>
 
-        {
+        {/* {
             productsToDisplay.map((productToDisplay) => {
                 return <SingleProduct key={productToDisplay.id} product={productToDisplay} token={token}></SingleProduct>
             })
-        }
+        } */}
     </div>
 )
 } 
 
   //----------//
 
-  // // see if you can figure out how this works, notice no props in the function parameter list
+  // see if you can figure out how this works, notice no props in the function parameter list
 
   // const {
   //   values: { sample, array },

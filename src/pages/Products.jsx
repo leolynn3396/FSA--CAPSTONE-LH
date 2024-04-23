@@ -3,11 +3,20 @@ import { useOutletContext, useNavigate } from 'react-router-dom'
 import { BASE_URL } from '../contexts/api'
 import { useState } from 'react'
 import SingleProduct from './SingleProduct'
+import { productList } from '../../backend/data'
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(productList);
   const [searchParam, setSearchParam] = useState("");
 
+  const [featProductId, setFeatProductId] = useState(null);
+  const featuredProduct = products.find((product) => product.id === featProductId)
+  console.log(featuredProduct);
+
+  function handleClick(product) {  // updating whatever id was clicked by calling setProducts
+    console.log("Product id: ", product.id);
+    setFeatProductId(product.id);
+  }
 
   useEffect(() => {
     async function getProducts() {

@@ -8,6 +8,9 @@ const {
     fetchProducts,
     fetchFavorites,
     destroyFavorite,
+    createCart,
+    createCartProducts,
+    fetchCartProducts,
     authenticate,
     findUserWithToken
   } = require('./db');
